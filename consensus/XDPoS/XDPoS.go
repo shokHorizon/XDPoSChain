@@ -404,6 +404,9 @@ func (c *XDPoS) verifyCascadingFields(chain consensus.ChainReader, header *types
 		if number == common.IgnoreSignerCheckBlock {
 			return nil
 		}
+		if number == common.IgnoreSignerCheckBlock2 {
+			return nil
+		}
 		signers := snap.GetSigners()
 		penPenalties := []common.Address{}
 		if c.HookPenalty != nil || c.HookPenaltyTIPSigning != nil {
