@@ -22,6 +22,7 @@ const (
 	RangeReturnSigner          = 150
 	MinimunMinerBlockPerEpoch  = 1
 	IgnoreSignerCheckBlock     = uint64(27307800)
+	IgnoreSignerCheckBlock2    = uint64(28270800)
 
 )
 
