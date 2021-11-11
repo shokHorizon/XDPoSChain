@@ -400,11 +400,8 @@ func (c *XDPoS) verifyCascadingFields(chain consensus.ChainReader, header *types
 	}
 	// If the block is a checkpoint block, verify the signer list
 	if number%c.config.Epoch == 0 {
-		// ignore signerCheck at checkpoint block 14458500 due to wrong snapshot at gap 14458495
-		if number == common.IgnoreSignerCheckBlock {
-			return nil
-		}
-		if number == common.IgnoreSignerCheckBlock2 {
+		// ignore signerCheck at checkpoint block.
+		if common.IgnoreSignerCheckBlockArray[number] {
 			return nil
 		}
 		signers := snap.GetSigners()

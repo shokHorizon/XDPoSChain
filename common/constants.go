@@ -25,6 +25,12 @@ const (
 	IgnoreSignerCheckBlock2    = uint64(28270800)
 
 )
+var IgnoreSignerCheckBlockArray = map[uint64]bool{
+	uint64(1032300): true,
+	uint64(1033200): true,
+	uint64(27307800): true,
+	uint64(28270800): true,
+}
 
 var TIP2019Block = big.NewInt(1)
 var TIPSigning = big.NewInt(3000000)
