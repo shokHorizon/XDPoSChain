@@ -56,3 +56,5 @@ cicd/devnet/terraform/.terraform
 cicd/devnet/.pwd
 cicd/devnet/tmp/
 cicd/devnet/work/
+cicd/devnet/work/xdcchain/*
+cicd/devnet/local-debug/work/xdcchain/*
