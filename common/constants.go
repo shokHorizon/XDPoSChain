@@ -45,6 +45,7 @@ var TIPXDCXCancellationFeeTestnet = big.NewInt(23779191)
 
 var TIPXDCXTestnet = big.NewInt(23779191)
 var IsTestnet bool = false
+var Enable0xPrefix bool = false
 var StoreRewardFolder string
 var RollbackHash Hash
 var BasePrice = big.NewInt(1000000000000000000)                       // 1
