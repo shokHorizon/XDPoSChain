@@ -87,8 +87,8 @@ func (m Message) From() common.Address      { return m.from }
 func (m Message) BalanceTokenFee() *big.Int { return m.balanceTokenFee }
 func (m Message) To() *common.Address       { return m.to }
 func (m Message) GasPrice() *big.Int        { return m.gasPrice }
-func (m Message) FeeCap() *big.Int          { return new(big.Int).Set(m.feeCap) }
-func (m Message) Tip() *big.Int             { return new(big.Int).Set(m.tip) }
+func (m Message) FeeCap() *big.Int          { return m.feeCap }
+func (m Message) Tip() *big.Int             { return m.tip }
 func (m Message) Value() *big.Int           { return m.amount }
 func (m Message) Gas() uint64               { return m.gasLimit }
 func (m Message) Nonce() uint64             { return m.nonce }
